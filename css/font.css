@@ -10,3 +10,33 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Monoton';
+    src: url('../fonts/Monoton-Regular.eot');
+    src: url('../fonts/Monoton-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Monoton-Regular.woff2') format('woff2'),
+        url('../fonts/Monoton-Regular.woff') format('woff'),
+        url('../fonts/Monoton-Regular.ttf') format('truetype'),
+        url('../fonts/Monoton-Regular.svg#Monoton-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Arial GEO BoldItalic';
+    src: url('../fonts/arial-geo-bolditalic-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/arial-geo-bolditalic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/arial-geo-bolditalic-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/arial-geo-bolditalic-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/arial-geo-bolditalic-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/arial-geo-bolditalic-webfont.svg#arial_geobolditalic') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: 'BPG Rioni';
+    src: url('../fonts/bpg-rioni-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/bpg-rioni-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/bpg-rioni-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/bpg-rioni-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/bpg-rioni-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/bpg-rioni-webfont.svg#bpg_rioniregular') format('svg'); /* Legacy iOS */
+}

@@ -1,6 +1,6 @@
 /* header */
 .container {
-    max-width: 1920px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
@@ -9,15 +9,15 @@ header {
 }
 .logo-contact {
     width: 100%;
-    height: 100px;
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .logo-contact h2 a {
-    font-family: 'Luckiest Guy';
+    font-family: 'Monoton';
     font-size: 50px;
-    color: #315470;
+    color: #ff9438;
     
 }
 /* .logo-contact p {
@@ -29,7 +29,7 @@ header {
 } */
 .navigation {
     width: 100%;
-    height: 80px;
+    height: 70px;
     background-color: #315470;
     display: flex;
     align-items: center;
@@ -49,10 +49,12 @@ li a {
     border-radius: 10%;
     padding: 8px;
     transition: all 1s;
+    font-family: 'BPG Rioni';
 }
 li a:hover {
     background-color: #ff9438;
 }
+/* 1st section */
 #slider-section {
     width: 100%;
     height: 500px;
@@ -79,19 +81,157 @@ li a:hover {
 .slide.out {
 	opacity: 0;
 }
+/* 2nd section */
 #info-section {
-    width: 80%;
+    width: 100%;
     margin-top: 50px;
     display: flex;
-    flex-direction: column;
+    padding: 20px;
     /* align-items: center;
     align-content: center; */
 }
+.info {
+    width: 60%;
+}
 #info-section p, #info-section h6 {
     margin-bottom: 15px;
-    margin-left: 20%;
+    margin-left: 5%;
     line-height: 20px;
+    
 }
 #info-section h6 {
     font-weight: bold;
+    
 }
+#info-section span {
+    font-weight: bold;
+}
+.foto {
+    width: 35%;
+    margin-left: 5%;
+}
+.foto img {
+    width: 100%; 
+    margin-bottom: 20px;
+}
+.foto span {
+    color: #cf4520;
+    font-weight: bold;
+}
+.line {
+    width: 0%;
+    height: 5px;
+    background-color: #cf4520;
+    transition: all 4s;
+    opacity: 0;
+}
+.line.red {
+    opacity: 1;
+    width: 100%;
+   
+}
+/* 3rd section */
+#service-section {
+    width: 100%;
+    padding-top: 50px;
+}
+#service-section h2 {
+    text-align: center;
+    font-size: 30px;
+}
+.main-box {
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    
+}
+.box {
+    max-width: 250px;
+    width: 100%;
+    height: 200px;
+    border: solid 1px #fff;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 2s;
+    /* margin-right: 3%; */
+}
+.box img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 1;
+    transition: all 2s;
+}
+.box p {
+    position: absolute;
+    font-weight: bold;
+}
+.box img:hover {
+    transform: rotateY(90deg);
+}
+
+
+
+
+
+
+
+
+
+
+/* 4th section */
+#contact-section {
+    width: 100%;
+    background-color: #315470;
+    margin-top: 50px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.address img {
+    padding: 25px;
+    border: dashed #fff 2px;
+}
+.address img:hover {
+    transform: rotate(360deg);
+}
+#contact-section h2, #contact-section p {
+    color: #fff;
+    font-family: 'BPG Rioni';
+}
+#contact-section p {
+    font-size: 13px;
+
+}
+#contact-section h2 {
+    font-size: 18px;
+}
+.phone, .address, .e-mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.phone img:hover {
+    transform: rotate(360deg);
+}
+.e-mail img:hover {
+    transform: rotateY(180deg);
+}
+#contact-section img, #contact-section h2 {
+    margin-bottom: 10px;
+    transition: all 0.5s;
+    border-radius: 50%;
+}
+#contact-section img:hover {
+    background-color: #ff9438;
+} 

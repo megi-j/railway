@@ -1,8 +1,11 @@
+// 1st section
 function railwaySlider(){
     let images = [
-        'images/1.jpg',
+        'images/5.jpg',
         'images/2.jpg',
-        'images/3.jpg',
+        'images/4.jpg',
+        'images/11.jpg',
+        'images/6.jpg',
     ];
     let currentSlideIndex = 0;
     setTimeout(next, 5000);
@@ -34,3 +37,36 @@ function railwaySlider(){
     }
 }
 railwaySlider();
+
+// 2nd section
+window.addEventListener('scroll', function(){
+    let scrollTop = document.querySelector('html').scrollTop;
+
+    if(scrollTop < 1100 && scrollTop > 300){
+        document.querySelector('.line').classList.add('red');
+    }
+});
+
+
+let navigation = document.querySelectorAll('.navigation a');
+for(let i = 0; i < navigation.length; i++){
+	navigation[i].addEventListener('click', function(e) {
+		console.log(this.href);
+		let href = this.getAttribute('href').slice(1);
+		let scrollPoint = document.getElementById(href).offsetTop;
+		e.preventDefault();
+		scrollDown(scrollPoint);
+	})
+}
+
+
+function scrollDown(max){
+	let scrollTop = document.querySelector('html').scrollTop;
+
+	if(scrollTop < max){
+		setTimeout(() => {
+			document.querySelector('html').scrollTop += 5;
+			scrollDown(max);
+		}, 2);
+	}
+}
